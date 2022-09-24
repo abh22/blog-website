@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+import "./App.css";
+
+import Home from "./Pages/Home/Home";
+import Sign from "./Pages/Sign";
+import Write from "./Components/Write/Write"
+import PrivateRoute from "./Components/PrivateRoute";
+import DetailedPost from "./Components/DetailedPost/DetailedPost";
+import Posts from "./Components/Posts/Posts";
+import Signup from "./Pages/Sign/Signup";
 
 function App() {
+  //   const navigate=useNavigate();
+  // useEffect=(()=>{
+  // navigate("/write")
+  // },[auth])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+      
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/sign" element={<Sign/>} />
+          <Route path="/signUp" element={<Signup />} />
+          <Route element={<PrivateRoute/>}>
+            <Route path="/write" element={<Write/>} />
+          </Route>
+          <Route exact path="/" element={<Posts/>} />
+          <Route path="/:id" element={<DetailedPost />} />
+        </Routes>
+      </Router>
+    </>
   );
 }
 

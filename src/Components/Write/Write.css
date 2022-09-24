@@ -1,0 +1,15 @@
+
+.feed{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around
+}
+.feed{
+    flex:9
+}
+.addPost{
+    flex:3;
+align-self: flex-start;
+    margin-right: 45px;
+}

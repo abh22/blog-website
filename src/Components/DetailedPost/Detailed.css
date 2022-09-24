@@ -1,0 +1,29 @@
+.fullPost{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    left:10%;
+    position: absolute;
+    margin-top: 70px;
+}
+img{
+    width: 600px;
+    margin-top: 60px;
+    margin: 40px;
+    border-radius: 5px;
+}
+h2{
+    color: palevioletred;
+margin: 15px;
+letter-spacing: 2px;
+font-style: italic;
+}
+h5{
+    color: rgb(131, 168, 155);
+    margin: 15px;
+}
+.date{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

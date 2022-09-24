@@ -1,0 +1,38 @@
+.header{
+    margin-top:60px;
+    overflow: hidden;
+}
+.headerTitles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: gray;
+    margin-top: 30px;
+}
+.headerTitle{
+    position: absolute;
+   top:17%;
+   font-size: 30px;
+   word-spacing: 5px;
+   letter-spacing: 1.5px;
+ 
+}
+.headerTitle2{
+    position: absolute;
+    top: 25%;
+    font-weight:700;
+    font-size: 50px;
+    font-style: italic;
+    color: white;
+
+}
+.headerImg{
+    width: 100vw;
+  object-fit: cover;
+  margin-top: 40px;
+  margin-left: 0;
+  height: 600px;
+ overflow: hidden;
+}
